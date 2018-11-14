@@ -80,8 +80,7 @@ class VisualIntegrationTest < ActionDispatch::IntegrationTest
     stub_fetch_subject_enabled
     visit login_path
 
-    has_unchecked_field?('label[for=select_all]', visible: :false)
-
+    page.has_selector?('table tr')
     Percy::Capybara.snapshot(page, name: '/:auth (dark)') if Octobox.config.percy_configured?
   end
 
