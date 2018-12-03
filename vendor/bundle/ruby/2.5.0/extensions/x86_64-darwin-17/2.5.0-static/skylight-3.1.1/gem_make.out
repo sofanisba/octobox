@@ -1,0 +1,32 @@
+current directory: /Users/andrewnesbitt/code/octobox/vendor/bundle/ruby/2.5.0/gems/skylight-3.1.1/ext
+/Users/andrewnesbitt/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20181203-20699-1wxmjym.rb extconf.rb
+I, [2018-12-03T13:30:13.797257 #32674]  INFO -- : SKYLIGHT_HDR_PATH=/Users/andrewnesbitt/code/octobox/vendor/bundle/ruby/2.5.0/gems/skylight-3.1.1/ext; SKYLIGHT_LIB_PATH=/Users/andrewnesbitt/code/octobox/vendor/bundle/ruby/2.5.0/gems/skylight-3.1.1/lib/skylight/native/x86_64-darwin
+I, [2018-12-03T13:30:13.798027 #32674]  INFO -- : [SKYLIGHT] fetching native ext; curr-platform=x86_64-darwin; requested-arch=x86_64-darwin; version=3.1.0-8051462
+I, [2018-12-03T13:30:13.798219 #32674]  INFO -- : [SKYLIGHT] attempting to fetch from remote; uri=https://s3.amazonaws.com/skylight-agent-packages/skylight-native/3.1.0-8051462/skylight_x86_64-darwin.tar.gz
+I, [2018-12-03T13:30:17.050451 #32674]  INFO -- : [SKYLIGHT] successfully downloaded native ext; out=/Users/andrewnesbitt/code/octobox/vendor/bundle/ruby/2.5.0/gems/skylight-3.1.1/ext/skylight_x86_64-darwin.tar.gz
+I, [2018-12-03T13:30:17.098957 #32674]  INFO -- : [SKYLIGHT] tar xzvf /Users/andrewnesbitt/code/octobox/vendor/bundle/ruby/2.5.0/gems/skylight-3.1.1/ext/skylight_x86_64-darwin.tar.gz
+I, [2018-12-03T13:30:17.099021 #32674]  INFO -- : [SKYLIGHT] x skylightd
+x libskylight.dylib
+x skylight.h
+x skylight_dlopen.h
+x skylight_dlopen.c
+
+checking for skylight_dlopen.h in /Users/andrewnesbitt/code/octobox/vendor/bundle/ruby/2.5.0/gems/skylight-3.1.1/ext... yes
+checking for dlfcn.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for fast thread local storage... yes
+creating Makefile
+
+current directory: /Users/andrewnesbitt/code/octobox/vendor/bundle/ruby/2.5.0/gems/skylight-3.1.1/ext
+make "DESTDIR=" clean
+
+current directory: /Users/andrewnesbitt/code/octobox/vendor/bundle/ruby/2.5.0/gems/skylight-3.1.1/ext
+make "DESTDIR="
+compiling skylight_memprof.c
+compiling skylight_dlopen.c
+compiling skylight_native.c
+linking shared-object skylight_native.bundle
+
+current directory: /Users/andrewnesbitt/code/octobox/vendor/bundle/ruby/2.5.0/gems/skylight-3.1.1/ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 skylight_native.bundle ./.gem.20181203-20699-1jhqrsa

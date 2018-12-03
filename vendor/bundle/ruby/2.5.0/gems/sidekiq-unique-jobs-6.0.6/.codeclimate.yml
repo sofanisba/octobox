@@ -1,0 +1,35 @@
+---
+version: '2'
+plugins:
+  bundler-audit:
+    enabled: false
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - ruby
+  flog:
+    enabled: true
+  fixme:
+    enabled: true
+  markdownlint:
+    enabled: true
+  reek:
+    enabled: true
+    config:
+      file: .reek.yml
+  rubocop:
+    enabled: true
+    channel: rubocop-0-57
+    config:
+      file: .rubocop.yml
+exclude_patterns:
+  - Gemfile
+  - "*.gemspec"
+  - Appraisals
+  - spec/**/*.rb
+  - gemfiles/**/*
+  - rails_example/**/*
+  - redis/**/*
+  - tmp/**/*
+
