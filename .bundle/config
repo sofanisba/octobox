@@ -2,6 +2,6 @@
 BUNDLE_ALLOW_OFFLINE_INSTALL: "true"
 BUNDLE_CACHE_ALL_PLATFORMS: "true"
 BUNDLE_PATH: "vendor/bundle"
-BUNDLE_CACHE_PATH: "vendor/bundle"
+BUNDLE_CACHE_PATH: "vendor/bundle/cache"
 BUNDLE_FROZEN: "true"
 BUNDLE_WITHOUT: "development:production"
